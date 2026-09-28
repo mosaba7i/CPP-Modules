@@ -6,6 +6,8 @@ A comprehensive C++ learning series covering fundamental OOP concepts, memory ma
 
 ![42 C++ Modules banner](header.png)
 
+![cpp cover](img/cover-cpp.png)
+
 ---
 
 ## 📚 Module Overview
