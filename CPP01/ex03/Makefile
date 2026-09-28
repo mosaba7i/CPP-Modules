@@ -1,0 +1,38 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: malsabah <malsabah@student.42amman.com>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/07/25 17:48:02 by malsabah          #+#    #+#              #
+#    Updated: 2026/07/25 17:48:04 by malsabah         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = violence
+
+CXX = c++
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+
+SRCS = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
+OBJS = $(SRCS:.cpp=.o)
+HEADERS = Weapon.hpp HumanA.hpp HumanB.hpp
+
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
+
+%.o: %.cpp $(HEADERS)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+clean:
+	rm -f $(OBJS)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re
