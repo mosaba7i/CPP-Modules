@@ -3,9 +3,6 @@
 A comprehensive C++ learning series covering fundamental OOP concepts, memory management, and advanced class design. All modules follow the **Orthodox Canonical Form** and **C++98** standard with `-Wall -Wextra -Werror` compilation flags.
 
 ---
-
-![42 C++ Modules banner](header.png)
-
 ![cpp cover](img/cover-cpp.png)
 
 ---
